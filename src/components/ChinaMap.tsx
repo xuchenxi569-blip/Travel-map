@@ -81,17 +81,17 @@ export default function ChinaMap({ selectedCode, onSelect, countByProvince }: Pr
       <defs>
         {/* 悬停光圈 */}
         <filter id="halo" x="-40%" y="-40%" width="180%" height="180%">
-          <feDropShadow dx="0" dy="0" stdDeviation="6" floodColor="#ff8fa3" floodOpacity="0.9" />
-          <feDropShadow dx="0" dy="0" stdDeviation="14" floodColor="#ffd6a5" floodOpacity="0.6" />
+          <feDropShadow dx="0" dy="0" stdDeviation="6" floodColor="#7bbf4a" floodOpacity="0.9" />
+          <feDropShadow dx="0" dy="0" stdDeviation="14" floodColor="#cfe39a" floodOpacity="0.6" />
         </filter>
         <linearGradient id="visited" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#ff9a8b" />
-          <stop offset="55%" stopColor="#ff6a88" />
-          <stop offset="100%" stopColor="#ff99ac" />
+          <stop offset="0%" stopColor="#8cc05a" />
+          <stop offset="55%" stopColor="#4e7d3a" />
+          <stop offset="100%" stopColor="#6fa84a" />
         </linearGradient>
         <linearGradient id="selected" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#fbc2eb" />
-          <stop offset="100%" stopColor="#ff7eb3" />
+          <stop offset="0%" stopColor="#c7e29a" />
+          <stop offset="100%" stopColor="#5a9e3c" />
         </linearGradient>
       </defs>
 

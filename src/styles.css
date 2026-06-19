@@ -1,15 +1,15 @@
 :root {
-  --bg-1: #fff5f0;
-  --bg-2: #fde7f3;
-  --bg-3: #eef2ff;
-  --ink: #3a2d3a;
-  --ink-soft: #8a7d88;
-  --brand: #ff6a88;
-  --brand-2: #ff99ac;
-  --accent: #ffd6a5;
-  --card: rgba(255, 255, 255, 0.72);
-  --border: rgba(255, 255, 255, 0.6);
-  --shadow: 0 18px 50px rgba(255, 106, 136, 0.18);
+  --bg-1: #eef3e4;
+  --bg-2: #dde9d3;
+  --bg-3: #c4d8c2;
+  --ink: #24341c;
+  --ink-soft: #61725a;
+  --brand: #4e7d3a;
+  --brand-2: #79a85b;
+  --accent: #b9cf83;
+  --card: rgba(247, 250, 241, 0.74);
+  --border: rgba(255, 255, 255, 0.55);
+  --shadow: 0 18px 50px rgba(46, 74, 30, 0.18);
   --radius: 22px;
   font-family: "PingFang SC", "Segoe UI", "Microsoft YaHei", system-ui, -apple-system,
     sans-serif;
@@ -28,7 +28,11 @@ body,
 
 body {
   color: var(--ink);
-  background: radial-gradient(120% 120% at 10% 0%, var(--bg-1) 0%, var(--bg-2) 45%, var(--bg-3) 100%);
+  background:
+    radial-gradient(60% 50% at 80% 8%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 60%),
+    radial-gradient(50% 45% at 12% 18%, rgba(160, 196, 120, 0.35) 0%, rgba(160, 196, 120, 0) 55%),
+    radial-gradient(70% 60% at 92% 95%, rgba(46, 84, 32, 0.28) 0%, rgba(46, 84, 32, 0) 60%),
+    linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 48%, var(--bg-3) 100%);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
@@ -67,7 +71,7 @@ a {
   height: 14px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--brand), var(--accent));
-  box-shadow: 0 0 0 4px rgba(255, 106, 136, 0.18);
+  box-shadow: 0 0 0 4px rgba(78, 125, 58, 0.2);
 }
 
 .btn-add {
@@ -79,12 +83,12 @@ a {
   padding: 11px 20px;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
-  box-shadow: 0 10px 24px rgba(255, 106, 136, 0.35);
+  box-shadow: 0 10px 24px rgba(46, 74, 30, 0.32);
   transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
 }
 .btn-add:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(255, 106, 136, 0.45);
+  box-shadow: 0 14px 30px rgba(46, 74, 30, 0.42);
 }
 .btn-add:disabled {
   opacity: 0.5;
@@ -145,7 +149,7 @@ a {
   align-items: center;
   justify-content: center;
   transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-  filter: drop-shadow(0 24px 44px rgba(120, 80, 160, 0.18));
+  filter: drop-shadow(0 24px 44px rgba(40, 70, 30, 0.2));
 }
 .map-wrap.with-panel {
   transform: translateX(-16%) scale(0.94);
@@ -171,11 +175,11 @@ a {
   transition: fill 0.25s ease, opacity 0.25s ease;
 }
 .province.empty {
-  fill: #e7e1ef;
-  opacity: 0.85;
+  fill: #d6e0c8;
+  opacity: 0.9;
 }
 .province.empty:hover {
-  fill: #d9d0ec;
+  fill: #c4d4b1;
 }
 .province.visited {
   fill: url(#visited);
@@ -189,7 +193,7 @@ a {
 }
 .province.decorative {
   fill: none;
-  stroke: rgba(255, 106, 136, 0.55);
+  stroke: rgba(78, 125, 58, 0.55);
   stroke-width: 1.2;
   stroke-dasharray: 4 4;
   pointer-events: none;
@@ -199,7 +203,7 @@ a {
   fill: #fff;
   stroke: var(--brand);
   stroke-width: 1.5;
-  filter: drop-shadow(0 2px 4px rgba(255, 106, 136, 0.4));
+  filter: drop-shadow(0 2px 4px rgba(46, 74, 30, 0.4));
 }
 .badge-text {
   fill: var(--brand);
@@ -218,7 +222,7 @@ a {
   background: var(--card);
   backdrop-filter: blur(18px);
   border-left: 1px solid var(--border);
-  box-shadow: -20px 0 50px rgba(120, 80, 160, 0.15);
+  box-shadow: -20px 0 50px rgba(40, 70, 30, 0.16);
   transform: translateX(105%);
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   overflow-y: auto;
@@ -314,7 +318,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(30, 18, 30, 0.72);
+  background: rgba(18, 30, 14, 0.74);
   backdrop-filter: blur(8px);
   animation: fade 0.25s ease;
 }
@@ -394,7 +398,7 @@ a {
 }
 
 .dropzone {
-  border: 2px dashed rgba(255, 106, 136, 0.5);
+  border: 2px dashed rgba(78, 125, 58, 0.5);
   border-radius: var(--radius);
   background: var(--card);
   backdrop-filter: blur(10px);
@@ -497,11 +501,11 @@ a {
 .draft-fields select:focus,
 .draft-fields input:focus {
   border-color: var(--brand);
-  box-shadow: 0 0 0 3px rgba(255, 106, 136, 0.18);
+  box-shadow: 0 0 0 3px rgba(78, 125, 58, 0.2);
 }
 .draft-fields select.needed {
   border-color: var(--brand);
-  background: #fff6f8;
+  background: #f1f6e8;
 }
 
 .hint {
